@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/Hotels/BG.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+    gap: 20px; /* Adds space between grid items */
+    padding: 10px;
+  }
+  .container h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 80px;
+    color: #ecf0f1;
+  }
+  .container p{
+    font-family: 'Courier New', monospace;
+    text-align: justify;
+    font-size: 20px;
+    color: #ecf0f1;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+  }
+  .container{
+    padding-bottom: 40px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%; /* Makes the image responsive within the container */
+    max-width: 500px; /* Sets a maximum size for the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 25px;
+    padding: 5px;
+  }
+  .grid-item img:hover {
+    transform: translateY(-10px);
+  }
+  img.resize {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .grid-item {
+    position: relative;
+    text-align: left;
+  }
+  .grid-item p{
+    max-width: 500px;
+    display: none;
+    text-decoration: none;
+    color: #ecf0f1
+  }
+  .grid-item b{
+    text-decoration: none;
+  }
+  .grid-item .image-wrapper {
+    position: relative;
+    display: inline-block; /* This makes the wrapper fit the size of the image */
+    text-align: justify;
+  }
+  .grid-item .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    display: none;
+    color: rgba(3, 3, 3, 0.887); /* Adjust text color as needed */
+    padding: 5px; /* Adjust padding as needed */
+    /* Add more styling for your title as needed */
+  }
+  .image-wrapper a{
+    text-decoration: none;
+    color: #ecf0f1
+  }
+  .image-wrapper:hover p {
+    display: inline;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stacks the grid items in one column on small screens */
+    }
+  }
+  /* Footer Styles */
+/* Footer Styles */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+footer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.garapon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.footer-about,.footer-contact, .footer-feedback {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer-about a{
+  text-decoration: none;
+  color: #ecf0f1
+}
+.footer-feedback input,
+  .footer-feedback button {
+    width: 50%; /* Full width elements */
+    padding: 15px; /* Padding inside the elements */
+    margin-bottom: 10px; /* Space between elements */
+    border: 1px solid #34495e; /* Border color to match the footer background */
+    background-color: #34495e; /* Background color to match the footer */
+    color: #ecf0f1; /* Text color to match the footer */
+    border-radius: 4px; /* Slightly rounded corners */
+  }
+  
+  .footer-feedback button {
+    background-color: #e74c3c; /* Red color for the button */
+    border: none; /* No border for the button */
+    font-weight: bold; /* Bold font for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footer-feedback button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  .footer-contact .social-icons a {
+    font-size: 24px; /* Larger font size for icons */
+    margin-right: 15px; /* Space between icons */
+  }
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer form {
+  margin-top: 20px; /* Space above the form */
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .garapon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about, .footer-links, .footer-contact {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer .col-1, .footer .col-2, .footer .col-3 {
+    width: 100%; /* Full width columns on small screens */
+    padding: 0 20px; /* Adjust padding for small screens */
+    margin-bottom: 30px; /* Space between stacked columns */
+  }
+
+  .footer .social-icons a {
+    font-size: 20px; /* Slightly smaller font size for icons on small screens */
+  }
+}
+@media (max-width: 768px) {
+  footer {
+      display: flex;
+      flex-direction: column;
+  }
+  .col-1, .col-2, .col-3 {
+      width: 100%;
+  }
+}
